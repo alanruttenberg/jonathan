@@ -12,22 +12,22 @@
            :parse))
 (in-package :jonathan.decode)
 
-(syntax:use-syntax :annot)
+;(syntax:use-syntax :annot)
 
-@doc
-"LISP value of false."
+
+;"LISP value of false."
 (defvar *false-value* nil)
 
-@doc
-"LISP value of null."
+
+;"LISP value of null."
 (defvar *null-value* nil)
 
-@doc
-"LISP value of {}."
+
+;"LISP value of {}."
 (defvar *empty-object-value* nil)
 
-@doc
-"LISP value of []."
+
+;"LISP value of []."
 (defvar *empty-array-value* nil)
 
 (defmacro make-normalizer (keywords)
@@ -43,8 +43,8 @@
 
 (defvar *inner-nest-p* nil)
 
-@doc
-"Convert JSON String to LISP object."
+
+;"Convert JSON String to LISP object."
 (defun parse (string &key (as :plist)
                        junk-allowed
                        keywords-to-read
