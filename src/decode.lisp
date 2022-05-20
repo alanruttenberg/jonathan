@@ -1,7 +1,7 @@
 (in-package :cl-user)
 (defpackage jonathan.decode
   (:use :cl
-        :annot.doc
+        ; :annot.doc
         :jonathan.error
         :jonathan.util
         :proc-parse)

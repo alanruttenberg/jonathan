@@ -1,7 +1,7 @@
 (in-package :cl-user)
 (defpackage jonathan.encode
   (:use :cl
-        :annot.doc
+        ; :annot.doc
         :jonathan.util)
   (:import-from :fast-io
                 :fast-write-byte

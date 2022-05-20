@@ -1,7 +1,7 @@
 (in-package :cl-user)
 (defpackage jonathan.helper
   (:use :cl
-        :annot.doc
+        ; :annot.doc
         :jonathan.error
         :jonathan.util
         :jonathan.encode)

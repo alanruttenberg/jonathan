@@ -7,18 +7,20 @@
   :version "0.1"
   :author "Rudolph-Miller"
   :license "MIT"
-  :depends-on (:cl-syntax
-               :cl-syntax-annot
+  :depends-on (;;:cl-syntax
+;;               :cl-syntax-annot
                :fast-io
                :trivial-types
                :babel
                :proc-parse
                :cl-ppcre
-               :cl-annot)
+                                        ;:cl-annot
+               )
   :components ((:module "src"
                 :components
                 ((:file "jonathan" :depends-on ("encode" "decode" "helper" "error"))
-                 (:file "helper" :depends-on ("encode" "decode" "error"))
+                 (:file "annot-utils")
+                 (:file "helper" :depends-on ("encode" "decode" "error" "annot-utils"))
                  (:file "encode" :depends-on ("util" "error"))
                  (:file "decode" :depends-on ("util"))
                  (:file "util" :depends-on ("error"))
